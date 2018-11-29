@@ -1,12 +1,11 @@
-.container-fluid,
+$size_sm: 48rem;
+$size_md: 64rem;
+$size_lg: 75rem;
+
+
 .container {
   margin-right: auto;
   margin-left: auto;
-}
-
-.container-fluid {
-  padding-right: 2rem;
-  padding-left: 2rem;
 }
 
 .row {
@@ -23,8 +22,8 @@
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -0.5rem;
-  margin-left: -0.5rem;
+  //margin-right: -0.5rem;
+  //margin-left: -0.5rem;
   &.reverse {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
@@ -70,8 +69,8 @@
   -webkit-box-flex: 0;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
+  //padding-right: 0.5rem;
+  //padding-left: 0.5rem;
 }
 
 .col-xs {
@@ -265,9 +264,9 @@
   order: 1;
 }
 
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: $size_sm) {
   .container {
-    width: 49rem;
+    width: $size_sm;
   }
   .col-sm,
   .col-sm-1,
@@ -299,8 +298,8 @@
     -webkit-box-flex: 0;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    //padding-right: 0.5rem;
+    //padding-left: 0.5rem;
   }
   .col-sm {
     -webkit-box-flex: 1;
@@ -460,9 +459,9 @@
   }
 }
 
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: $size_md) {
   .container {
-    width: 65rem;
+    width: $size_md;
   }
   .col-md,
   .col-md-1,
@@ -494,8 +493,8 @@
     -webkit-box-flex: 0;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    //padding-right: 0.5rem;
+    //padding-left: 0.5rem;
   }
   .col-md {
     -webkit-box-flex: 1;
@@ -655,9 +654,9 @@
   }
 }
 
-@media only screen and (min-width: 75em) {
+@media only screen and (min-width: $size_lg) {
   .container {
-    width: 76rem;
+    width: $size_lg;
   }
   .col-lg,
   .col-lg-1,
@@ -689,8 +688,8 @@
     -webkit-box-flex: 0;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    //padding-right: 0.5rem;
+    //padding-left: 0.5rem;
   }
   .col-lg {
     -webkit-box-flex: 1;
